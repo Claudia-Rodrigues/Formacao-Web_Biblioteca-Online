@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biblioteca Além das Letras</title><!--considerar palavras chave no titulo da página-->
+
+        <meta name="description" content="'Além das Letras' é uma biblioteca online que oferece uma vasta seleção de livros para todos os gostos e interesses.Seja você um amante de ficção, romance, ciência ou biografias, aqui encontrará obras cuidadosamente selecionadas para enriquecer sua experiência de leitura.'Além das Letras' possibilita que os utilizadores criem suas próprias bibliotecas pessoais, onde podem guardar seus livros favoritos para futuras leituras, além de recomendar títulos a outros leitores.">
+
+        <meta name="robots" content="index"> <!--é para o nosso site aparecer nas pesquisas-->
+
+        <link rel="shortcut icon" href="../img/mini_logotipo.PNG" type="image/x-icon">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="../css/index.css"> <!--o ficheiro css nao esta na mesma pasta que o index.html-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header><!--cabeçalho-->
+        
+        <div class="row">
+            <div class="col-sm-12 col-md-3">
+                <img src="../img/mini_logotipo.PNG" alt="logotipo da biblioteca Além das Letras">
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <h1>Biblioteca Online</h1>
+                <h3>Além das Letras</h3>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <!-- <a href="https://www.instagram.com">
+                    <img src="./img/logo_instagram.png" alt="Logo Instagram" class="redes-sociais">
+                </a>
+                &nbsp;
+                <a href="https://www.facebook.com/">
+                    <img src="./img/logo_facebook.png" alt="Logo Facebook" class="redes-sociais">
+                </a> -->
+            </div>
+
+        </div>
+    </header>
+
+<!-- navbar -->
+    <nav class="navbar navbar-expand-lg  sticky-top"> <!-- sticky-top é para fixar o navbar, ou seja se fizermos scroll o navbar vem junto e fica sempre no topo da pagina -->
+        <div class="mx-auto">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">              
+            <a class="navbar-brand" href="#">
+                <img src="../img/mini_logotipo.PNG" alt="" style="width: 50px; border-radius: 50px;margin-left: 25px;"></a>
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./catalogo.html">Catálogo</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Serviços
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./Biblioteca_Itinerante.html">Biblioteca Itinerante</a></li>
+                  <li><a class="dropdown-item" href="./Clube_leitura.html">Clube de Leitura</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="./contactos.html">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+<!-- Caixa de Pesquisa -->
+   <div class="container" >
+   
+    <div class="row" id="caixa-livro">
+        <h1 id="title" class="text-center mt-5" style="font-size: 35px;">Encontre o livro</h1>
+        <br>
+        <div id="input" class="input-group mx-auto col-lg-6 col-md-8 col-sm-12">
+            <input id="search-box" type="text" class="form-control" placeholder="Pesquisa o livro">
+            <button id="button" class="btn btn-danger">Pesquisar</button>
+        </div>
+    </div>
+    
+<!-- Resultados de livros -->
+    <div class="book-list mt-5" style="padding-bottom: 100px;">
+        <h2 class="text-center" style="color: rgb(174, 31, 6);">Resultados</h2>
+        <br>
+        <div id="results"></div>
+    </div>
+  </div>
+
+
+<!-- Rodapé -->
+  <footer>
+    <div class="row">
+     <div class="col">
+
+     </div>
+     <div class="col">
+
+     </div>
+       <div class="col">
+         <a href="https://www.instagram.com" style="text-decoration: none;">
+           <img src="../img/logo_instagram.png" alt="Logo Instagram" class="redes-sociais">
+       </a>
+       &nbsp;
+       <a href="https://www.facebook.com/">
+           <img src="../img/logo_facebook.png" alt="Logo Facebook" class="redes-sociais">
+       </a>
+     </div>
+
+    </div>   
+   <p><a style="text-decoration: none; color: rgb(250, 242, 233);" href="">&copy; 2025  Além das Letras - Biblioteca Online. Todos os direitos reservados.</a></p>
+   <p><a style="text-decoration: none; color: rgb(250, 242, 233);" href="">Termos de Serviço, Política de Cookies e Outros</a></p>
+ <p>Contate-nos: <a class= email-contacto href="mailto:bibalemdasletras@gmail.com">bibalemdasletras@gmail.com</a></p>
+ 
+</footer>     
+
+
+<script>
+
+function bookSearch(){
+    var search= document.getElementById('search-box').value 
+    document.getElementById('results').innerHTML=""
+    console.log(search)
+
+    $.ajax({
+        url:"https://www.googleapis.com/books/v1/volumes?q=" + search,
+        dataType:"json",
+
+        success: function(data) {
+            for(i=0; i<data.items.length; i++){
+                var book = data.items[i].volumeInfo;
+                
+                // Verificar se há imagem disponível
+                var image = book.imageLinks ? book.imageLinks.thumbnail : "https://via.placeholder.com/150"; // Placeholder se não tiver imagem
+                
+                //limitar a descriçao ate 150 palavras
+                var description = book.description ? book.description.substring(0, 200) + '...' : 'Sem descrição disponível.';
+
+                // Link para ler o livro (se disponível)
+                var previewLink = book.previewLink ? book.previewLink : '#';
+
+
+                // Criar o cartão usando classes do Bootstrap
+                document.getElementById('results').innerHTML += `
+                    <div class="card mb-3" style="max-width: 90%; margin: auto;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="${image}" class="img-fluid rounded-start" alt="Capa do Livro" style="height: 300px; object-fit: cover;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size:20px;">${book.title}</h5>
+                                    <br>
+                                    <h6 class="card-subtitle mb-2 text-muted">Autor: ${book.authors ? book.authors.join(', ') : 'Desconhecido'}</h6>
+                                    <p class="card-text"><small class="text-muted">Publicado em: ${book.publishedDate ? book.publishedDate : 'Data desconhecida'}</small></p>
+                                    <p class="card-text">${description}</p>
+                                    <a href="${previewLink}" class="btn btn-success" target="_blank">Ler Livro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+        },
+        type: 'GET'
+    });
+}
+
+document.getElementById('button').addEventListener('click',bookSearch,false)
+
+
+
+</script>
+
+
+</body>
+</html>
